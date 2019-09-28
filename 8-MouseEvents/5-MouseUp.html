@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MouseUp</title>
+</head>
+<body>
+<button>Mouse ile bas ve biraz bekle</button>
+<p>Bırakma olayı mouseup</p>
+<br>
+<b></b>
+
+<script src="../jquery-3.4.1.min.js"></script>
+<script>
+    $(() => {
+        let saniye = 0;
+        $("button").mouseup(() => {
+            $("b").text("Mouse bırakıldı");
+        });
+        $("button").mousedown(() => {
+            $("b").text("Mouse basıldı");
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<button id="dbl">
+    Çift Tıkla
+</button>
+<script src="../jquery-3.4.1.min.js"></script>
+<script>
+    $(() => {
+        $("title").html("DoubleClick!");
+        $("#dbl").dblclick(() => {
+            alert("Çift tıklandı!");
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nesnenin üzerinde dolaşırken çalışır</p>
+<br>
+<div>
+    <p>Mouse Cursor koordinatları : <b></b></p>
+</div>
+
+<script src="../jquery-3.4.1.min.js"></script>
+<script>
+    $(() => {
+        $("html").mousemove((e) => {
+            $("b").text('x -> ' + e.pageX + ' ' + 'y -> ' + e.pageY); // pageX ve pageY ile mouse koordinatlarını alıyoruz
+        });
+    });
+</script>
+</body>
+</html>

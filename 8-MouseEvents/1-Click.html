@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="btn_tkl">Tıkla Bana</button>
+<br>
+<b></b>
+<script src="../jquery-3.4.1.min.js"></script>
+<script>
+    $(() => {
+        $("title").html("Click");
+        $("#btn_tkl").click(() => {
+            $("b").text("Butona tıklandı");
+            $("#btn_tkl").hide();
+        });
+
+    });
+</script>
+</body>
+</html>

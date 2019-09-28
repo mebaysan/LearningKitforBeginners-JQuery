@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button>Üzerime gel</button>
+<br>
+<p>Fare nesnenin üzerinden ayrıldığında çalışır</p>
+<br>
+<b></b>
+<script src="../jquery-3.4.1.min.js"></script>
+<script>
+    $(()=>{
+       $("button").mouseout(()=>{
+         $("b").text("Üzerinden ayrıldı");
+       });
+    });
+</script>
+</body>
+</html>
