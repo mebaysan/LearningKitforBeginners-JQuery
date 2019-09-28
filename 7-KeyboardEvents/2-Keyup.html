@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>Bir tuşa basılı tut</p>
+
+    <script src="../jquery-3.4.1.min.js"></script>
+    <script>
+        $(()=>{
+            $("body").keyup(()=>{
+                alert("Tuştan el çekildi!");
+            });
+        });
+    </script>
+</body>
+</html>

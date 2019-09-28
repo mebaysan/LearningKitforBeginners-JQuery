@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+</head>
+<style>
+    #kare {
+        width: 100px;
+        height: 100px;
+        background-color: blueviolet;
+        margin-left: 400px;
+        margin-top: 400px;
+    }
+</style>
+
+<body>
+<div id="kare">
+    <p style="font-size: 13px; padding:20px;">
+        Hareket için yön tuşlarını kullan...
+    </p>
+</div>
+
+<script src="../jquery-3.4.1.min.js"></script>
+<script>
+    $(() => {
+        $("title").html("Hareket");
+        $("body").keydown((e) => {
+            // e.which -> klavye'nin ASCII kodlarını alır
+            let keycode = (e.keyCode ? e.keyCode : e.which);
+            switch (keycode) {
+                case 37: // sol
+                    $("#kare").animate({
+                        marginLeft: "-=10px"
+                    });
+                    break;
+                case 38: // yukarı
+                    $("#kare").animate({
+                        marginTop: "-=10px"
+                    });
+                    break;
+                case 39: // sağ
+                    $("#kare").animate({
+                        marginLeft: "+=10px"
+                    });
+                    break;
+                case 40: // aşağı
+                    $("#kare").animate({
+                        marginTop: "+=10px"
+                    });
+                    break;
+                default:
+                    return;
+            }
+        });
+    });
+</script>
+</body>
+
+</html>

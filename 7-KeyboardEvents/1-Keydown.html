@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Document</title>
+</head>
+
+<body>
+    Gir ve enter'a bas
+    <input type="text">
+
+
+
+    <script src="../jquery-3.4.1.min.js"></script>
+    <script>
+        $(() => {
+            $("title").html("Keydown");
+            $("input").keydown((e) => {
+                let keycode = (e.keyCode ? e.keyCode : e.which);
+                if (keycode == 13) {
+                    alert("Enter'a basıldı!");
+                }
+
+            });
+        });
+    </script>
+</body>
+
+</html>

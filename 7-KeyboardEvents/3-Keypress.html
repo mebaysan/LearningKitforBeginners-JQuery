@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+</head>
+<style>
+    .kare {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        display: none;
+    }
+</style>
+
+<body>
+    <div>
+        <label>Bir tuşa basılı tut</label>
+        <input type="text">
+        <hr>
+        <b></b>
+        <hr>
+        <div class="kare">
+
+        </div>
+    </div>
+
+    <script src="../jquery-3.4.1.min.js"></script>
+    <script>
+        $(() => {
+            $("title").html("Keypress");
+            $("input").keypress(() => {
+                $("b").append("Tuşu bırak");
+                $(".kare").fadeIn(4000);
+            });
+
+
+        });
+    </script>
+</body>
+
+</html>
