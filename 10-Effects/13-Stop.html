@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    div {
+        height: 200px;
+        width: 200px;
+        background-color: black;
+        display: none;
+    }
+</style>
+<body>
+<button id="process">İşlem</button>
+<br>
+<button id="stop">Durdur</button>
+<br>
+<div></div>
+
+<script src="../jquery-3.4.1.min.js"></script>
+<script>
+    // olayı durdurur
+    $(() => {
+        $("#process").click(() => {
+            $("div").fadeIn(5000);
+        });
+        $("#stop").click(() => {
+            $("div").stop();
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    div {
+        height: 200px;
+        width: 200px;
+        background-color: black;
+        display: none;
+    }
+</style>
+<body>
+<button id="process">İşlem</button>
+<br>
+<button id="finish">Bitir</button>
+<br>
+<div></div>
+
+<script src="../jquery-3.4.1.min.js"></script>
+<script>
+    // olayı bitirir ve direkt sonuca ulaştırır
+    $(() => {
+        $("#process").click(() => {
+            $("div").fadeIn(5000);
+        });
+        $("#finish").click(() => {
+            $("div").finish();
+        });
+    });
+</script>
+</body>
+</html>

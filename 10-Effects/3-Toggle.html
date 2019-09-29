@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    div {
+        height: 250px;
+        width: 250px;
+        background-color: indianred;
+    }
+</style>
+<body>
+
+<button>Bas Bana</button>
+<br>
+<div></div>
+<script src="../jquery-3.4.1.min.js"></script>
+<script>
+    // basınca show ve hide yapar.
+    $(() => {
+        $("button").click(() => {
+            $("div").toggle(1000);
+        });
+    });
+</script>
+</body>
+</html>

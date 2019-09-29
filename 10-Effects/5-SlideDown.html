@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    div {
+        height: 250px;
+        width: 250px;
+        background-color: red;
+        display: none;
+    }
+</style>
+<body>
+<button>Bas</button>
+<br>
+<div></div>
+
+<script src="../jquery-3.4.1.min.js"></script>
+<script>
+    // yukarıdan aşağı getirir.
+    $(() => {
+        $("button").click(() => {
+            $("div").slideDown(2000);
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    div {
+        height: 200px;
+        width: 200px;
+        background-color: black;
+        margin-top: 150px;
+        margin-left: 400px;
+    }
+</style>
+<body>
+<button id="oynat">İşlem</button>
+<div></div>
+
+<script src="../jquery-3.4.1.min.js"></script>
+<script>
+    $(() => {
+        $("#oynat").click(() => {
+            $("div").animate({
+                marginTop: "+=80px"
+            });
+            $("div").animate({
+                marginLeft: "+=50px"
+            }).queue(() => {
+                alert("İşlem durdu");
+                $(this).dequeue();
+                $("div").clearQueue(); // bütün fonksiyonları sonlandırır. (finish / stop gibi)
+            });
+            $("div").animate({
+                marginTop: "-=80px"
+            });
+            $("div").animate({
+                marginLeft: "+50px"
+            });
+        });
+
+    });
+</script>
+</body>
+</html>
