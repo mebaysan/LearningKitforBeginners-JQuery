@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./jquery-ui.min.css">
+
+    <style>
+        .ui-menu {
+            width: 190px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="menu">
+        <li class="ui-state-disabled">Kurslar</li>
+        <li>
+            <div>Satın Al</div>
+        </li>
+        <li>
+            <div>Kurs Detayları</div>
+        </li>
+
+        <li>
+            <ul>
+                <li>
+                    <div>Php</div>
+                </li>
+                <li>
+                    <div>Jquery</div>
+                </li>
+                <li>
+                    <div>Python</div>
+                </li>
+                <li>
+                    <div>Django</div>
+                </li>
+            </ul>
+        </li>
+
+    </ul>
+    <script src="../jquery-3.4.1.min.js"></script>
+    <script src="./jquery-ui.min.js"></script>
+    <script>
+        $(() => {
+            $("#menu").menu();
+        });
+    </script>
+</body>
+
+</html>

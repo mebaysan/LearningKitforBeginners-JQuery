@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./jquery-ui.min.css">
+    <link rel="stylesheet" href="jquery-ui.theme.min.css">
+</head>
+<style>
+    #kare {
+        width: 550px;
+        height: 150px;
+        background-color: grey;
+        margin-top: 200px;
+        margin-left: 300px;
+        text-align: center;
+    }
+
+    p {
+        padding-top: 50px;
+    }
+
+    #res {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+    }
+</style>
+<div id="kare">
+    <p>Buraya bir resim sürükle</p>
+</div>
+<div id="res"></div>
+
+<body>
+
+    <script src="../jquery-3.4.1.min.js"></script>
+    <script src="./jquery-ui.min.js"></script>
+    <script>
+        $(() => {
+            $("#kare").droppable({
+                drop: () => { // buraya bir nesne bırakılınca ne olacak
+                    alert("Resim yükleniyor...");
+                    $("#res").fadeOut(1000);
+                }
+            });
+            $("#res").draggable();
+        });
+    </script>
+</body>
+
+</html>

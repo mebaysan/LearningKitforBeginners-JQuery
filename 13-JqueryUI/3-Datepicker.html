@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./jquery-ui.min.css">
+    <link rel="stylesheet" href="jquery-ui.theme.min.css">
+</head>
+
+<body>
+
+    <input type="text" id="tarih" placeholder="Tarih Seç">
+    <script src="../jquery-3.4.1.min.js"></script>
+    <script src="./jquery-ui.min.js"></script>
+    <script>
+    $(()=>{
+        $("#tarih").datepicker({
+            showButtonPanel:true, // alt tarafta done buton gözükür
+            changeMonth:true, // ay seçimi gelir
+            changeYear:true, // yıl seçimi gelir
+            numberOfMonths:2, // bir sonraki ay gelir
+            showWeek:true, // haftaları gösterir
+
+
+        });
+    });
+    </script>
+</body>
+
+</html>

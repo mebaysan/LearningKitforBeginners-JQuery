@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./jquery-ui.min.css">
+    <link rel="stylesheet" href="jquery-ui.theme.min.css">
+</head>
+
+<body>
+    <div id="tabs">
+        <ul>
+            <li><a href="#js">JavaScript</a></li>
+            <li><a href="#php">PHP</a></li>
+            <li><a href="#python">Python</a></li>
+            <li><a href="#jquery">JQuery</a></li>
+        </ul>
+        <div id="js">
+            <h1>JavaScript</h1>
+        </div>
+        <div id="php">
+            <h1>PHP</h1>
+        </div>
+        <div id="python">
+            <h1>Python</h1>
+        </div>
+        <div id="jquery">
+            <h1>JQuery</h1>
+        </div>
+    </div>
+    <script src="../jquery-3.4.1.min.js"></script>
+    <script src="./jquery-ui.min.js"></script>
+    <script>
+        $(() => {
+            $("#tabs").tabs();
+        });
+    </script>
+</body>
+
+</html>

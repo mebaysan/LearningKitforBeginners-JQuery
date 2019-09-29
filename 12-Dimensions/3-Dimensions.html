@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        width: 200px;
+        height: 200px;
+        background-color: gray;
+        position: absolute;
+        left: 300px;
+        top: 50px;
+    }
+
+    p {
+        position: absolute;
+        left: 30px;
+        top: 50px;
+    }
+</style>
+
+<body>
+
+    <p>
+        <p>Dimensions Notları</p>
+    </p>
+
+
+    <script src="../jquery-3.4.1.min.js"></script>
+    <script>
+        // içinde olduğu yani kendisinin bir üstündeki elemente olan uzaklığını alır
+        $(() => {
+            let uzaklik = $("p").position();
+            alert("Soldan uzaklık -> " + uzaklik.left + " Yukardan uzaklık -> " + uzaklik.top);
+
+        });
+    </script>
+</body>
+
+</html>

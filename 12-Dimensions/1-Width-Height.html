@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<div id="kutu" style="width: 50px; height: 50px; background-color: red;"></div>
+<br>
+<b></b>
+<body>
+    <script src="../jquery-3.4.1.min.js"></script>
+    <script>
+        // genişlik ve yüksekliği alabiliriz
+        $(() => {
+            $("#kutu").height(80);
+            $("#kutu").width(67);
+            let yükseklik = $("#kutu").height();
+            let genislik = $("#kutu").width();
+            $("b").text("Yükseklik -> " + yükseklik + " Genişlik -> "+genislik );
+        });
+    </script>
+</body>
+
+</html>

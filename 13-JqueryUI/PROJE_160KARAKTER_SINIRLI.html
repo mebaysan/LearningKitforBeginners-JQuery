@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./jquery-ui.min.css">
+    <link rel="stylesheet" href="jquery-ui.theme.min.css">
+</head>
+
+<body>
+
+    <span><strong>Mesajınızı Giriniz</strong></span>
+    <br>
+    <textarea id="mesaj_alan" cols="100" rows="10"></textarea>
+    <br>
+    <b></b>
+    <script src="../jquery-3.4.1.min.js"></script>
+    <script src="./jquery-ui.min.js"></script>
+    <script>
+        $(() => {
+            $("#mesaj_alan").keyup(() => {
+                let limit = 160;
+                let say = $("#mesaj_alan").val().length;
+                $("b").text("Girilen karakter sayısı = " + say);
+                if (say > limit) {
+                    $("b").text("160 limitini geçtiniz! => " + say);
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

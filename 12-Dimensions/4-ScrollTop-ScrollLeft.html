@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        width: 250px;
+        height: 250px;
+        position: relative;
+        overflow: scroll;
+    }
+
+    p {
+        width: 500px;
+        height: 400px;
+    }
+</style>
+
+<body>
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quibusdam. Quam perferendis reprehenderit
+            pariatur corporis cupiditate assumenda quibusdam eligendi eos earum temporibus. Nisi itaque esse mollitia
+            nemo.
+            Fugit soluta doloremque, eos vitae magni modi adipisci magnam blanditiis facere facilis. Numquam doloribus
+            aliquam reiciendis laboriosam aperiam praesentium inventore est deserunt commodi officia quibusdam,
+            asperiores,
+            et culpa velit vel iure nihil labore unde ad consequatur laudantium nesciunt. Fugiat soluta, saepe
+            architecto a
+            suscipit tempora, quod officia id repellat unde fuga. Assumenda eligendi earum accusamus. Nihil accusantium
+            ipsam quasi quia adipisci repellat perferendis atque quaerat tenetur reiciendis distinctio eaque debitis,
+            nisi
+            corrupti obcaecati. Facilis doloribus, eaque in quibusdam illum error hic provident! Dolorem voluptatibus
+            minus
+            quaerat necessitatibus vero veniam consequatur maxime delectus non laudantium voluptates sapiente ipsum, eos
+            unde quam corporis voluptatum aut assumenda, dicta quasi inventore rem sequi. Quam accusantium architecto
+            temporibus, ad vitae explicabo ipsum quibusdam maiores delectus. Sequi numquam distinctio perspiciatis
+            placeat
+            labore earum veritatis nobis nihil odio voluptatum fugiat sapiente laudantium, quas est incidunt dolores
+            tempore
+            harum, nisi obcaecati explicabo quasi voluptate? Officia, voluptate vero. Quasi commodi odio incidunt.
+            Tempora
+            aspernatur harum quos. Quibusdam eius impedit nesciunt. Nesciunt aperiam accusantium numquam dignissimos
+            consequatur quo saepe cumque vitae tenetur quis.
+        </p>
+    </div>
+
+    <script src="../jquery-3.4.1.min.js"></script>
+    <script>
+        // Otomatik olarak scroll'u verilen pozisyonlara çeker
+        $(() => {
+            $("div").scrollLeft(150);
+            $("div").scrollTop(50);
+
+        });
+    </script>
+</body>
+
+</html>

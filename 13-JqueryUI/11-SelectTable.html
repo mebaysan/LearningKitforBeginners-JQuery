@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./jquery-ui.min.css">
+    <link rel="stylesheet" href="jquery-ui.theme.min.css">
+</head>
+<style>
+    #kurslar .ui-selecting {
+        background-color: yellow;
+    }
+
+    #kurslar .ui-selected {
+        background-color: green;
+    }
+</style>
+
+<body>
+    <ol id="kurslar">
+        <li>PHP</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>JQuery</li>
+    </ol>
+
+    <script src="../jquery-3.4.1.min.js"></script>
+    <script src="./jquery-ui.min.js"></script>
+    <script>
+        $(() => {
+            $("#kurslar").selectable();
+        });
+    </script>
+</body>
+
+</html>
