@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<button>İşlem</button>
+<br>
+<p></p>
+
+<script src="../jquery-3.4.1.min.js"></script>
+<script>
+    // sub class -> alt sınıfı bize verir
+    $(() => {
+        $("p").on('test.paragraf', (e) => {
+            alert(e.namespace);
+        });
+        $("button").click((e) => {
+            $("p").trigger("test.paragraf");
+        });
+    });
+</script>
+</body>
+</html>

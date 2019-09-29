@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h4><b>Koordinatlar</b></h4>
+<b id="koordinat"></b>
+<script src="../jquery-3.4.1.min.js"></script>
+<script>
+    // farenin sayfadaki x ve y koordinatlarını verir
+    $(() => {
+        $("html").mousemove((e) => {
+            $("#koordinat").text("x -> " + e.pageX + " " + "y -> " + e.pageY);
+        });
+    });
+
+</script>
+</body>
+</html>

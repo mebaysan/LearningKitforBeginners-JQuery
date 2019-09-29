@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="key" type=text" placeholder="Tuş'a basın">
+<br>
+<b></b>
+<script src="../jquery-3.4.1.min.js"></script>
+<script>
+    // klavyeden basılan tuşların ASCII karakterini almaya yarar
+    $(() => {
+        $("#key").on("keydown",(e)=>{
+            $("b").text("Basılan tuşun ASCII karakteri = "+ e.which);
+        });
+    });
+</script>
+</body>
+</html>

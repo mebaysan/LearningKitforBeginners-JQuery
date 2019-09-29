@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<ul>
+    <li>Php</li>
+    <li>Python</li>
+    <li>JavaScript</li>
+</ul>
+
+
+<script src="../jquery-3.4.1.min.js"></script>
+<script>
+    // olay olmadan önce mouse hangi element üzerinden geçti onun bilgisini verir
+    $(() => {
+        $("li").mouseover(() => {
+            alert(event.relatedTarget.nodeName);
+        });
+    });
+
+</script>
+</body>
+</html>

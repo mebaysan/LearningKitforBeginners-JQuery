@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button>Tıkla bana</button>
+<br>
+<h4>Enes Baysan JQuery Notları</h4>
+<script src="../jquery-3.4.1.min.js"></script>
+<script>
+    $(() => {
+        $("button").click(()=>{
+           alert(event.currentTarget.nodeName);
+        });
+    });
+
+</script>
+</body>
+</html>

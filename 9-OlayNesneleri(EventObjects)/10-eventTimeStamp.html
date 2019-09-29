@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button>Tıkla</button>
+<br>
+<p></p>
+<br>
+
+<b></b>
+
+<script src="../jquery-3.4.1.min.js"></script>
+<script>
+    // tıklama ile geçen zaman arasındaki farkı milisaniye cinsinden verir bize.
+    $(() => {
+        let gecen_zaman, suan;
+        $("button").click((e) => {
+            if (suan) {
+                gecen_zaman = e.timeStamp - suan;
+                $("p").text("Şuan -> " + e.timeStamp);
+                $("b").text("Son olaydan sonra geçen zaman -> " + gecen_zaman);
+            }
+            suan = e.timeStamp;
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button>Tıkla</button>
+<a href="http://www.baysansoft.com">Link</a>
+
+<script src="../jquery-3.4.1.min.js"></script>
+<script>
+    // olay hangi nesnede gerçekleşir onun bilgisini verir
+    $(() => {
+        $("body").click((e) => {
+            alert(event.target.href); // bu şekilde onun linkini de alabiliriz
+        });
+    });
+
+</script>
+</body>
+</html>
